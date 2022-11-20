@@ -29,14 +29,14 @@ const UserSchema = new mongoose.Schema(
             type: String,
             default: ""
         },
-        picturePath: {
-            type: String,
+        friends: {
+            type: Array,
             default: []
         },
         location: String,
         occupation: String,
         viewedProfile: Number,
-        Impressions: Number,
+        impressions: Number,
     }, { timestamps: true }
 )
 

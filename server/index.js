@@ -62,8 +62,8 @@ const connectDB = async () => {
         console.log(`MongoDB Connected: ${(await connect).connection.host} ...`)
 
         //ADD MOCK DATA TO DB ONE TIME ONLY
-        User.insertMany(users)
-        Post.insertMany(posts)
+        // User.insertMany(users)
+        // Post.insertMany(posts)
 
     } catch (error) {
         console.error(error);
